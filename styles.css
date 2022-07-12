@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body {
+    font-family: "Russo One";
+  }
+  
+body {
+    user-select: none;
+    background-color: gray;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#drum-machine{
+    width: 600px;
+    display: flex;
+    border: 5px solid black;
+    padding: 20px;
+    background-color: lightgrey;
+    align-items: center;
+    justify-content: center;
+}
+#pad{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.drum-pad{
+    display: flex;
+    height: 100px;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#display{
+    width: 80%;
+    height: 50px;
+    background-color: grey;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-options{
+    width: 40%;
+    padding: 20px;
+}
+
+.display-options div{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.volume-slider input{
+    width: 100%;
+}
+
+.btn-slider .select{
+    margin: auto;
+    border: 1px solid black;
+    width: 50px;
+    height: 20px;
+    padding: 1px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.btn-slider .select .inner{
+    width: 23px;
+    height: 19px;
+    background: blue;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
